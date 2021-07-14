@@ -16,5 +16,33 @@ class TestClass {
 		Parrot parrot = new Parrot();
 		assertTrue(parrot instanceof Bird);
 	}
+	
+	@Test
+	void testDuckSound() {
+		Duck duck = new Duck();
+		duck.sing();
+	}
+	
+	@Test
+	void testChickenSound() {
+		Chicken chicken = new Chicken();
+		chicken.sing();
+	}
+	
+	@Test
+	void testRooster() {
+		Rooster rooster = new Rooster();
+		rooster.sing();
+		assertTrue(rooster instanceof Chicken);
+		assertTrue(rooster.gender == "MALE");
+	}
+	
+	@Test
+	void testParrotProximity() {
+		Parrot parrot = new Parrot();
+		parrot.relatedAnimal = new Dog();
+		//Sings sound of related or proximity animal
+		parrot.sing();
+	}
 
 }
