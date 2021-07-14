@@ -1,5 +1,5 @@
 # singtel
-Singtel test
+**Singtel test Eclipse project**
 
 Solution.java file in the src folder has main method which on running will give you the results of the different types of behaviour etc.
 
