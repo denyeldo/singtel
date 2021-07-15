@@ -38,10 +38,11 @@ class TestClass {
 	}
 	
 	@Test
-	void testParrotProximity() {
+	void testParrotProximitywithDogNearBy() {
 		Parrot parrot = new Parrot();
 		parrot.relatedAnimal = new Dog();
 		//Sings sound of related or proximity animal
+		System.out.println("Dog sound by parrot below");
 		parrot.sing();
 	}
 
