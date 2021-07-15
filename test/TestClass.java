@@ -48,6 +48,24 @@ class TestClass {
 		parrot.sing();
 	}
 	
+	@Test
+	void testShark() {
+		
+		Shark shark = new Shark();
+		
+		assertTrue(shark instanceof Fish);
+		assertTrue(shark.size == "large" && shark.color=="grey");
+		
+	}
+	
+	@Test
+	void testClownFish() {
+		ClownFish shark = new ClownFish();
+		
+		assertTrue(shark instanceof Fish);
+		assertTrue(shark.size == "small" && shark.color=="orange");
+	}
+	
 	
 
 }
