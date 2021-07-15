@@ -9,6 +9,8 @@ class TestClass {
 		//fail("Not yet implemented");
 		Fish fish = new Fish();
 		assertTrue(fish instanceof Swim);
+		assertFalse(fish instanceof Singing);
+		assertFalse(fish instanceof Walking);
 	}
 	
 	@Test
@@ -45,5 +47,7 @@ class TestClass {
 		System.out.println("Dog sound by parrot below");
 		parrot.sing();
 	}
+	
+	
 
 }
