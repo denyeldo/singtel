@@ -67,6 +67,15 @@ class TestClass {
 		assertTrue(clown.behaviour == "make jokes");
 	}
 	
+	@Test
+	void testDolphin() {
+		
+		Dolphin dolphin = new Dolphin();
+		assertTrue(dolphin instanceof MammalSwimmer);
+		System.out.println("Dolphin not fish");
+		
+	}
+	
 	
 
 }
