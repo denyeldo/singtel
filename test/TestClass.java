@@ -77,5 +77,17 @@ class TestClass {
 	}
 	
 	
+	@Test
+	void testButterfly() {
+		Butterfly butterfly = new Butterfly();
+		assertTrue(butterfly instanceof Flying);
+	}
+	
+	@Test
+	void testCattepillar() {
+		Caterpillar cp = new Caterpillar();
+		assertTrue(cp instanceof Walking);
+	}
+	
 
 }
