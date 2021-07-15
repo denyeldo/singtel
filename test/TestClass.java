@@ -60,10 +60,11 @@ class TestClass {
 	
 	@Test
 	void testClownFish() {
-		ClownFish shark = new ClownFish();
+		ClownFish clown = new ClownFish();
 		
-		assertTrue(shark instanceof Fish);
-		assertTrue(shark.size == "small" && shark.color=="orange");
+		assertTrue(clown instanceof Fish);
+		assertTrue(clown.size == "small" && clown.color=="orange");
+		assertTrue(clown.behaviour == "make jokes");
 	}
 	
 	
